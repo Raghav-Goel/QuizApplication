@@ -33,8 +33,7 @@ public class QuizController {
     }
     @PostMapping("/submitQuiz")
     public ResponseEntity<Integer> submitQuiz(@RequestBody List<Response> response) throws Exception {
-        Integer correctAns=quizService.getResult(response);
-        return new ResponseEntity<>(correctAns,HttpStatus.OK);
-
+        Integer totalMarks=quizService.getResult(response);
+        return new ResponseEntity<>(totalMarks,HttpStatus.OK);
     }
 }

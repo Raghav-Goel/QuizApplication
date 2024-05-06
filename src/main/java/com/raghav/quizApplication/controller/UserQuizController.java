@@ -12,10 +12,4 @@ import org.springframework.web.bind.annotation.*;
 public class UserQuizController {
     @Autowired
     UserQuizService userQuizService;
-
-    @GetMapping("/getUserQuizInfo")
-    public ResponseEntity<UserQuiz> getUserAndQuizInfo(@RequestParam Long userId, @RequestParam Long quizId){
-        UserQuiz userQuiz=userQuizService.findByUserIdAndQuizId(userId,quizId);
-        return new ResponseEntity<>(userQuiz, HttpStatus.OK);
-    }
 }
