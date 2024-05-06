@@ -1,0 +1,23 @@
+[1mdiff --git a/src/main/java/com/raghav/quizApplication/service/QuizServiceImpl.java b/src/main/java/com/raghav/quizApplication/service/QuizServiceImpl.java[m
+[1mindex c31190e..b65a9ff 100644[m
+[1m--- a/src/main/java/com/raghav/quizApplication/service/QuizServiceImpl.java[m
+[1m+++ b/src/main/java/com/raghav/quizApplication/service/QuizServiceImpl.java[m
+[36m@@ -30,7 +30,7 @@[m [mpublic class QuizServiceImpl implements QuizService {[m
+     public Quiz getQuiz(Long quizId) {[m
+         return quizDao.findById(quizId).get();[m
+     }[m
+[31m-[m
+[32m+[m[32m    public void Hello(){}[m
+     @Override[m
+     public Long createQuiz(String title,String category,int qstNo) {[m
+         Quiz quiz=new Quiz();[m
+[1mdiff --git a/src/main/java/com/raghav/quizApplication/service/serviceInterface/QuestionService.java b/src/main/java/com/raghav/quizApplication/service/serviceInterface/QuestionService.java[m
+[1mindex a62a219..08f22ed 100644[m
+[1m--- a/src/main/java/com/raghav/quizApplication/service/serviceInterface/QuestionService.java[m
+[1m+++ b/src/main/java/com/raghav/quizApplication/service/serviceInterface/QuestionService.java[m
+[36m@@ -14,4 +14,5 @@[m [mpublic interface QuestionService {[m
+     public Long createQuestion(Question question);[m
+     public List<Question> getByCategoryAndQuestionNumber(String category,int questionNumber);[m
+ [m
+[32m+[m
+ }[m

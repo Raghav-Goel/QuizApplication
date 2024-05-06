@@ -8,9 +8,9 @@ import com.raghav.quizApplication.entity.Quiz;
 import com.raghav.quizApplication.entity.Response;
 import com.raghav.quizApplication.service.serviceInterface.QuestionService;
 import com.raghav.quizApplication.service.serviceInterface.QuizService;
+import jakarta.transaction.Transactional;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import org.springframework.transaction.annotation.Transactional;
 
 import java.util.ArrayList;
 import java.util.List;
