@@ -13,6 +13,10 @@ function Login(){
               <input type="text" className="form-control" value={defaultName} onChange={(event)=>setName(event)}/>
             </div>
             <div className="form-group">
+              <label className="form-label"> Email </label>
+              <input type="text" className="form-control" value={defaultName} onChange={(event)=>setName(event)}/>
+            </div>
+            <div className="form-group">
               <label className="form-label">Password</label>
               <input type="password" className="form-control" />
             </div>
